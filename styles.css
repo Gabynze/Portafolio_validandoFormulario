@@ -1,0 +1,602 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+/**div {
+  border: 1px solid red;
+}**/
+
+/** Styles Header**/
+.cabeçalho {
+  background-color: rgb(245, 239, 230);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  height: 50px;
+}
+
+.cabeçalho__img {
+  position: relative;
+  height: 45px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cabeçalho__img:hover {
+  cursor:pointer;
+  -webkit-box-shadow: 5px 5px 15px 5px rgb(42, 27, 5);
+   box-shadow: 0px 0px 1px 2px #212c03;
+}
+
+.cabeçalho__img:a {
+  height: 70px;
+  width: 65px;
+  overflow: none;
+  
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-evenly;
+}
+
+.menu .botao {
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(42, 27, 5);
+}
+.menu .botao:hover {
+  cursor:pointer;
+  -webkit-box-shadow: 5px 5px 15px 5px #392e11;
+    box-shadow: 0px 0px 1px 2px #343703;
+  border-radius: 5px;
+  border-style: 1px solid;
+}
+
+
+/** Styles parte II portada, apresentación**/
+/** Portada**/
+.portada {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 226, 196);
+  position: relative;
+}
+
+.img__portada{
+  width: 100%;
+  height: 200px;
+}
+/** supercard imagem e apresentação**/
+.super__card__img {
+  display: flex;
+  border: 1.5px solid rgb(247, 172, 125);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 28%;
+  left: 18%;
+}
+
+.super__card__img img {
+  object-fit: fill;
+  height:100%;
+  width: 100%; 
+}
+
+.super__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.super__card__texto {
+  width: 700px;
+  margin-left: 18%;
+  color: rgb(61, 20, 19);
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.super__card__texto h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.super__card__texto h3 {
+  color: rgb(90, 67, 4);
+}
+
+
+
+/** Styles parte III Formação**/
+.card__formaçao {
+  background-color: rgb(245, 245, 220);
+  color: rgb(61, 20, 19);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 32%;
+  height: auto;
+}
+
+.card__formacao__texto {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.card__formacao__texto h2{
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.card__formacao__texto ul{
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.4;
+  border-left: 3.5px solid rgb(78, 56, 17);
+  padding-left: 12px;
+}
+
+/** Styles parte IV Experiencia**/
+.card__experiencia{
+  background-color: rgb(247, 235, 213);
+  color: rgb(61, 20, 19);
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  padding-left: 32%;
+}
+
+.card__experiencia__texto {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.card__experiencia__texto h2 {
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.card__experiencia__texto ul {
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.4;
+  border-left: 3.5px solid rgb(78, 56, 17);
+  padding-left: 12px;
+}
+
+/** Styles parte v Projetos**/
+
+.projetos{
+  background-color: rgb(255, 226, 196);
+  display: flex;
+  flex-direction: column;
+}
+
+.projetos h2 {
+  color: rgb(0, 0, 0);
+  padding-left: 32%;
+  padding-top: 1%;
+}
+
+.container__card__projetos{
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/** Styles parte v card Projetos1,2,3,4 **/
+.card__projetos1,
+.card__projetos2, 
+.card__projetos3,
+.card__projetos4 {
+  background-color: rgb(247, 235, 213);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 250px;
+  align-content: stretch;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0 0 0 / 12%);
+  overflow: hidden;
+  margin-left: 3%;
+  margin-bottom: 10px;
+}
+
+.card__projetos1:hover,
+.card__projetos2,
+.card__projetos3,
+.card__projetos4 {
+  box-shadow: 0 0 1px 1px rgba(0 0 0 / 7%), 0 10px 15px 0 rgba(0 0 0 / 10%);
+}
+
+.card__projetos1__img,
+.card__projetos2__img,
+.card__projetos3__img,
+.card__projetos4__img {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  height: 50%;
+}
+
+.card__projetos1__img img,
+.card__projetos2__img img, 
+.card__projetos3__img img,
+.card__projetos4__img img {
+  object-fit: contain;
+  height: 100%;
+  width:100%;
+  border-radius: 10%;
+}
+
+.card__projetos1__body,
+.card__projetos2__body,
+.card__projetos3__body,
+.card__projetos4__body {
+  height:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.card__projetos1__body h3,
+.card__projetos2__body h3,
+.card__projetos3__body h3,
+.card__projetos4__body h3 {
+  color: rgb(83, 24, 31);
+  text-align: center;
+}
+
+.card__projetos1__body p,
+.card__projetos2__body p,
+.card__projetos3__body p,
+.card__projetos4__body p,
+.card-button button {
+  text-align: center;
+  min-height: 25%;
+  color: rgb(42, 27, 5);
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+.card-button button{
+  text-decoration: none;
+  border-style: solid;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(42, 27, 5);
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+
+/** Styles parte VI contatos**/
+.contato {
+  background-color: rgb(245, 239, 230);
+  display: flex;
+  flex-direction: column;
+  color: rgb(42, 27, 5);
+}
+
+.contato h2 {
+  color: rgb(0, 0, 0);
+  padding-left: 32%;
+  padding-top: 2%;
+}
+
+.contato__container {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-content: flex-start;
+ text-align: start;
+ padding-bottom: 3%;
+}
+
+.contato__texto { 
+  width: 30%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+.contato__redes {
+  width: 50%;
+  max-height: 20%;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.contato__redes a {
+  background-color: rgb(245, 214, 155);
+  color: rgb(42, 27, 5);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center; 
+  text-decoration: none;
+  object-fit: cover;
+}
+
+.contato__formulario {
+  width: 40%;
+  height: 40%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  align-content: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.contato__formulario input,
+.contato__formulario textarea {
+  width:100%;
+}
+
+.form-control {
+  margin-bottom: 1px
+}
+
+.form-control i {
+  visibility: hidden;
+}
+
+.form-control.sucesso i.img-sucesso {
+  visibility: visible;
+}
+
+.form-control small {
+  visibility: hidden;
+  /* position: absolute; */
+  margin-top: 5px;
+  margin-left: 5PX ;
+  font-size: 14px;
+}
+
+.form-control.sucesso input,
+.form-control.sucesso textarea{
+  border: 2px solid #4ECA64;
+}
+.form-control.error input,
+.form-control.error textarea{
+  border: 2px solid #DB5A5A;
+}
+
+.form-control.error small{
+  color: #DB5A5A;
+  visibility: visible;
+}
+
+.contato__formulario button{
+  text-decoration: none;
+  border-style: solid 1px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(16, 14, 14);
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+
+/**Responsive**/
+@media (max-width:600px) {
+
+  /** Styles Header**/
+  .cabeçalho {
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+  }
+  .cabeçalho__img {
+    margin-top: 10px;
+  }
+
+  .menu {
+    width: 60%;
+    display: block;
+    justify-content: space-around;
+    align-content: stretch;
+  }
+
+  .menu .botao {
+    font-size: 14px;
+    margin-right: 6px; 
+  }
+
+  /** Styles parte II portada, apresentación**/
+  /** Portada**/
+  .img__portada {
+    height: 80px;
+  }
+
+  /** supercard imagem e apresentação**/
+  .super__card__texto {
+    width: 350px;
+    margin-left: 5%;
+    line-height: 1.3;
+    font-size: 12px;
+    padding-bottom: 2%;
+  }
+
+  .super__card__img {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+  }
+
+  /** Styles parte III Formação**/
+  .card__formaçao,
+  .card__experiencia {
+    padding-left: 5%;
+  }
+
+  .card__formacao__texto h2,
+  .card__experiencia__texto h2{
+    font-size: 14px;
+  }
+
+  .card__formacao__texto ul,
+  .card__experiencia__texto ul {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  /** Styles parte v Projetos**/
+  .projetos h2 {
+    font-size: 14px;
+    padding-left: 5%;
+    padding-top: 2%;
+  }
+
+  .container__card__projetos {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 500px;
+  }
+
+  .card__projetos1,
+  .card__projetos2, 
+  .card__projetos3 {
+    background-color:rgb(44, 46, 59); ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-between;
+    height: 180px;
+    width: 180px;
+    margin-bottom: 2%;
+  }
+
+  .card__projetos1__img,
+  .card__projetos2__img,
+  .card__projetos3__img{
+    height: 40%;
+    margin-top: 2%;
+  }
+
+  .card__projetos1__body h3,
+  .card__projetos2__body h3,
+  .card__projetos3__body h3 {
+    font-size: 12px;
+  }
+
+  .card__projetos1__body p,
+  .card__projetos2__body p,
+  .card__projetos3__body p,
+  .card-button button {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  .card-button button{
+    height: 20px;
+    width: 80px;
+  }
+
+  /** Styles parte VI contatos**/
+  .contato h2 {
+    font-size: 14px;
+    padding-left: 5%;
+    padding-top: 2%;
+  }
+
+  .contato__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .contato__texto{
+    width: 100%;
+    font-size: 12px;
+  }
+  .contato__redes {
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  .contato__formulario {
+    width: 85%;
+    padding-left: 5%;
+    font-size: 12px ;
+  }
+
+  .contato__formulario button{
+    height: 20px;
+    width: 80px;
+    text-decoration: none;
+    border-style: solid 1px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 1px;
+    text-align: center;
+    font-size: 12px;
+  }
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+
